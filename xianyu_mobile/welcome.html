@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/api/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<button id="go"> Run</button>
+		<div id="block">Hello!</div>
+		
+		<script type="text/javascript">
+			$("#go").click(function(){
+			  $("#block").animate({ 
+			    width: "90%",
+			    height: "100%", 
+			    fontSize: "10em", 
+			    borderWidth: 10,
+			    transform: "translateX(100px)",
+			    '-webkit-transform': "translateX(100px)"
+			  }, 1000 );
+			});
+		</script>
+	</body>
+</html>
